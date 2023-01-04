@@ -1,0 +1,43 @@
+ext {
+
+    android = [
+            compileSdkVersion: 31,
+            buildToolsVersion: '30.0.1',
+            applicationId    : 'com.infelt.idiom',
+            minSdkVersion    : 21,
+            targetSdkVersion : 31,
+            versionCode      : 10001020,
+            versionName      : '1.0.1.20',
+    ]
+
+    test = [
+            ext_junit    : 'androidx.test.ext:junit:1.1.4',
+            junit        : 'junit:junit:4.13.2',
+            espresso_core: 'androidx.test.espresso:espresso-core:3.5.0'
+    ]
+
+    deps = [
+            //koltin
+            core_ktx                  : 'androidx.core:core-ktx:1.9.0',
+            coroutines_ktx            : 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1',
+            lifecycle_livedata_ktx    : 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.1',
+            constraintlayout          : 'androidx.constraintlayout:constraintlayout:2.1.4',
+            lifecycle_viewmodel_ktx   : 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1',
+            work_runtime              : 'androidx.work:work-runtime:2.7.1',
+            work_runtime_ktx          : 'androidx.work:work-runtime-ktx::2.7.1',
+            //android
+            appcompat                 : 'androidx.appcompat:appcompat:1.5.1',
+            material                  : 'com.google.android.material:material:1.7.0',
+            kotlinx_coroutines_android: 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1',
+
+            room_runtime              : "androidx.room:room-runtime:2.4.3",
+            room_compiler             : "androidx.room:room-compiler:2.4.3",
+
+    ]
+
+
+    third = [
+            gson: 'com.google.code.gson:gson:2.9.0',
+    ]
+
+}
